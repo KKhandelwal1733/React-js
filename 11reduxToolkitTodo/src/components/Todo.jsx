@@ -17,11 +17,7 @@ function Todos() {
           >
             <div className='text-white'>{todo.text}</div>
             <button
-             onClick={() => dispatch(updateTodo({id:todo.id,
-                todo:{id:todo.id,
-                    text:"edited"
-                }
-             }))}
+             onClick={() => dispatch(updateTodo(todo.id))}
               className="text-white bg-yellow-500 border-0 py-1 px-4 focus:outline-none hover:bg-yellow-600 rounded text-md"
             >✏️</button>
 
